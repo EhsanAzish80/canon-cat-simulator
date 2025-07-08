@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: monospace;
+  color: #00FF00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Boot screen */
+#boot-screen {
+  color: #00FF00;
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#blinker {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* Main screen */
+#screen {
+  width: 800px;
+  height: 500px;
+  border: 2px solid #00FF00;
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+#editor {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.2em;
+}
+
+/* Status bar */
+#status-bar {
+  padding: 5px 10px;
+  background-color: #002200;
+  border-top: 1px solid #00FF00;
+  font-size: 0.9rem;
+}
+
+/* Cheat sheet panel */
+#cheat-sheet {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 250px;
+  background: #002200;
+  border: 1px solid #00FF00;
+  padding: 10px;
+  font-family: monospace;
+  color: #00FF00;
+  font-size: 0.9rem;
+  z-index: 100;
+}
+
+#cheat-sheet h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #00FF00;
+  padding-bottom: 5px;
+}
+
+#cheat-sheet ul {
+  padding-left: 10px;
+}
+
+/* Toggle icon */
+#cheat-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background: #002200;
+  color: #00FF00;
+  font-family: monospace;
+  font-weight: bold;
+  border: 1px solid #00FF00;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 101;
+}
