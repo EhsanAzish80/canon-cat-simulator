@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canon Cat UX Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Boot Screen -->
+  <div id="boot-screen">
+    <p>Canon Cat System v1.0</p>
+    <p>Initializing...</p>
+    <p><span id="blinker">█</span></p>
+  </div>
+
+  <!-- Main Editor Screen -->
+  <div id="screen" style="display: none;">
+    <div id="editor" contenteditable="true"></div>
+    <div id="status-bar">[LEAP: ]  [Cursor: 0000]  [CLIP: 0 lines]</div>
+  </div>
+
+  <!-- Cheat Sheet Panel -->
+  <div id="cheat-sheet" style="display: none;">
+    <h3>Canon Cat Shortcuts</h3>
+    <ul>
+      <li><b>Ctrl + →</b> — Leap forward</li>
+      <li><b>Ctrl + ←</b> — Leap backward</li>
+      <li><b>Ctrl + C</b> — Copy</li>
+      <li><b>Ctrl + V</b> — Paste</li>
+      <li><b>Ctrl + D</b> — Cut (Delete)</li>
+      <li><b>Ctrl + Z</b> — Undo</li>
+      <li><b>Ctrl + S</b> — Save (auto)</li>
+      <li><b>Ctrl + /</b> — Toggle this panel</li>
+    </ul>
+  </div>
+
+  <!-- Toggle Icon -->
+  <div id="cheat-toggle">?</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
